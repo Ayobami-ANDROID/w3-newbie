@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Century Gothic sans-serif;
+}
+header{
+  background:  url(../images/open.jpg);
+  background-color: #333;
+  background-blend-mode:difference;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  height:75px
+}
+.flex{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.flex h3{
+ font-size: 50px;
+ color:#fff;
+}
+.container .flex{
+  justify-content: space-between;
+}
+ul{
+  list-style:none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  color:#fff;
+  transition: background 0.5s ease;
+}
+a:hover{
+  background-color: #333;
+}
+.about{
+  /*animation-name: red-to-black;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+  */
+  -webkit-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -moz-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -o-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+  -ms-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+}
+.rex{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 50%;
+  margin-top:130px;
+  margin-left: 20px;
+  margin-right:20px;
+  padding:0;
+}
+.rex-text{
+  font-family: "Times new roman",sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.rex-text h3{
+  font-size:30px;
+}
+.form-group{
+  background-color: #fff;
+  height:300px;
+  padding:30px;
+  text-align:center;
+  border-radius:5px;
+  box-shadow: 0 10px 30px #333;
+  font-size:30px;
+  font-family: "Times new roman", serif;
+}
+.form-control{
+  width:100%;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+input[type="text"],
+input[type="email"]{
+  border-style: none;
+  border-bottom: 1px solid #333;
+  outline-color: transparent;
+}
+.form-group .submit-button{
+  padding:10px 20px;
+  font-size: 15px;
+  font-family:"lato" serif;
+  border:none;
+  border-radius:40px;
+  background:rgb(89,150,255);
+  -webkit-transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+}
+.submit-button:hover{
+  background: rgb(147,187,255);
+  padding:10px 30px;
+}
+@keyframes red-to-black {
+  0% {background: red;
+    transform:translate(0,0);
+  }
+
+  50% {background: yellow;
+    transform:translate(10px,10px);
+  }
+
+  100% {background:black;
+    transform:translate(20px,20px);
+  }
+}
